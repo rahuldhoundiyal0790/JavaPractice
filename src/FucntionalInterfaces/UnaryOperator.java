@@ -1,5 +1,8 @@
 package FucntionalInterfaces;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UnaryOperator {
     public static void main(String[] args) {
         /*
@@ -14,5 +17,15 @@ public class UnaryOperator {
         java.util.function.UnaryOperator<Integer> square = x -> x * x;
         int squaredResult = square.apply(5);
         System.out.println("Squared Result: " + squaredResult);
+
+
+        // Example with List
+        List<String> ls = new ArrayList<>();
+        ls.add("hello");
+        ls.add("world");
+
+        ls.replaceAll(ele -> ele + " new");
+
+      System.out.println(ls);
     }
 }
